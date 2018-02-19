@@ -12,7 +12,7 @@ module Blockchain
     def initialize(content:, previous_hash:)
       @content = content
       @previous_hash = previous_hash
-      @nonce = START_NONCE
+      @nonce = START_NONCE.dup
       mine!
     end
 
