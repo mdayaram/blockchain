@@ -6,7 +6,7 @@ module Blockchain
     attr_reader :previous_hash
     attr_reader :nonce
 
-    START_NONCE = "fusion"
+    START_NONCE = "Crying Breakfast Friends"
     WORK_FACTOR = 4
 
     def initialize(content:, previous_hash:)
