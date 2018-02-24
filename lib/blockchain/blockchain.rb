@@ -22,6 +22,10 @@ module Blockchain
       blocks == other.blocks
     end
 
+    def to_s
+      blocks.reverse.map(&:to_s).join("\n------\n")
+    end
+
     def to_json
       blocks.map(&:to_json)
     end

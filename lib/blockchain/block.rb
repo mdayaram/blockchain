@@ -34,6 +34,16 @@ module Blockchain
         nonce == other.nonce
     end
 
+    def to_s
+      [
+        "nonce=#{nonce}",
+        "prev_hash=#{previous_hash}",
+        "hash=#{block_hash}",
+        "content:",
+        content.to_s
+      ].join("\n")
+    end
+
     def to_json
       {
         previous_hash: previous_hash,
